@@ -34,12 +34,12 @@ const translations = {
     backToResultBtn: "Zurück zum Ergebnis",
     resultTitle: "Dein Meme Coping Profil 🎯",
     questions: [
-      "Wenn alles schiefläuft, aber du trotzdem weitermachen musst:",
-      "Du hörst schlechte Nachrichten in den Medien:",
+      "Wenn alles schiefläuft, aber Sie trotzdem weitermachen mussen:",
+      "Sie hören schlechte Nachrichten in den Medien:",
       "Konflikt mit Vorgesetzten oder Lehrern:",
       "Keine Energie mehr für Arbeit/Uni:",
       "Große Veränderung (Umzug, Jobwechsel):",
-      "Du fühlst dich unvorbereitet für eine Prüfung:",
+      "Sie fühlen sich unvorbereitet für eine Prüfung:",
     ],
     labels: {
       top: "Positiv",
