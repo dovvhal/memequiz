@@ -470,3 +470,91 @@ button:disabled {
 .hidden {
   display: none;
 }
+.result-btn {
+  margin: 10px;
+  padding: 14px 26px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border: none;
+  border-radius: 30px;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.result-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 80%; /* можно подогнать под размер, если нужно */
+  max-width: 400px; /* ограничим, чтобы не растягивалось */
+  margin: 30px auto 0 auto; /* выровнять по центру */
+}
+
+.result-btn {
+  margin: 8px 0; /* вертикальные отступы между кнопками */
+  padding: 14px 26px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border: none;
+  border-radius: 30px;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* делает кнопки одинаковой ширины */
+  box-sizing: border-box; /* чтоб padding не ломал ширину */
+}
+
+.result-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 280px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: left;
+  border-radius: 12px;
+  padding: 15px;
+  position: absolute;
+  z-index: 100;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Маленький треугольник снизу тултипа */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+/* При наведении показываем тултип */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

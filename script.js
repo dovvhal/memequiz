@@ -227,11 +227,36 @@ function renderEndScreen() {
       </div>
 
       <div class="summary">
-        <p>${t.labels.q1}: ${scores.humor}</p>
-        <p>${t.labels.q2}: ${scores.resignation}</p>
-        <p>${t.labels.q3}: ${scores.rebellion}</p>
-        <p>${t.labels.q4}: ${scores.hope}</p>
-      </div>
+  <div class="tooltip-container">
+    <button class="result-btn">Humor / Ironie: ${scores.humor}</button>
+    <div class="tooltip-text">
+      Memes dienen als Werkzeug, um die Stimmung zu heben und sich besser zu fühlen. Sie liefern einen kurzen positiven Impuls und können helfen, eine optimistische Haltung gegenüber Problemen zu entwickeln.
+    </div>
+  </div>
+
+  <div class="tooltip-container">
+    <button class="result-btn">Resignation / Ablenkung: ${scores.resignation}</button>
+    <div class="tooltip-text">
+      Memes dienen als Möglichkeit, der Realität zu entfliehen oder Probleme kurzfristig zu vergessen. Sie bieten die Gelegenheit, Stress abzubauen und negative Gefühle zu verarbeiten ohne dass direkt aktiv gehandelt werden muss. Dies kann eine Reaktion auf Müdigkeit, Angst oder das Gefühl der Ohnmacht sein.
+    </div>
+  </div>
+
+  <div class="tooltip-container">
+    <button class="result-btn">Rebellion / Aktionismus: ${scores.rebellion}</button>
+    <div class="tooltip-text">
+      Memes dienen der Ausdrucksform von Unzufriedenheit oder Protest. Humor wird als Katalysator für Kritik oder aktive Handlungen genutzt, teilweise auch aggressiv (z. B. Online-Diskussionen). Negative Memes helfen, Frustration auszudrücken und Solidarität mit Gleichgesinnten zu zeigen.
+    </div>
+  </div>
+
+  <div class="tooltip-container">
+    <button class="result-btn">Hoffnung / Motivation: ${scores.hope}</button>
+    <div class="tooltip-text">
+      Memes werden als Werkzeug zur Selbstentwicklung oder Problemlösung genutzt. Sie vermitteln das Gefühl, dass Probleme überwindbar sind und motivieren zum Handeln.
+    </div>
+  </div>
+</div>
+
+
 
       <div class="button-group">
         <button class="restart-btn" onclick="renderIntro()">${t.againBtn}</button>
